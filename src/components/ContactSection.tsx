@@ -11,7 +11,7 @@ const ContactSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Contact Us</h2>
           <div className="w-20 h-1 bg-pink-500 mx-auto mb-6 scroll-animate scroll-hidden"></div>
           <p className="text-lg text-gray-100 max-w-3xl mx-auto font-ubuntu scroll-animate scroll-hidden">
-            Have questions about Nexus Hackathon 2.0? Our team is here to help!
+            Have questions about Pitch Deck Summit? Our team is here to help!
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Email</h4>
-                  <p className="text-gray-700 font-ubuntu">apwen@gmail.com</p>
+                  <p className="text-gray-700 font-ubuntu">apwenlasu@gmail.com</p>
                 </div>
               </div>
               
@@ -36,7 +36,8 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Phone</h4>
-                  <p className="text-gray-700 font-ubuntu">+234-1234567890</p>
+                  <p className="text-gray-700 font-ubuntu">+234 903 997 7151</p>
+                  <p className="text-gray-700 font-ubuntu">+234 708 382 7808</p>
                 </div>
               </div>
               
