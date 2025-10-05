@@ -10,7 +10,7 @@ const faqData = [
     answer: 'No, registration and participation are completely free.',
   },
   {
-    question: 'Who can participate in the Nexus Hackathon?',
+    question: 'Who can participate in the competition?',
     answer: 'Only current students of Lagos State University (LASU) from any department or level are eligible.',
   },
   {
@@ -26,21 +26,9 @@ const faqData = [
     answer: 'Proposals will be reviewed, and at least 15 teams will be shortlisted for the online judging phase.',
   },
   {
-    question: 'What is expected in the online judging round?',
-    answer: 'Shortlisted teams should show meaningful progress on their project and present it virtually to expert judges.',
-  },
-  {
-    question: 'Do we need a fully working prototype for the final round?',
-    answer: 'Yes, finalist teams are expected to demonstrate a working MVP or functional prototype at the final presentation.',
-  },
-  {
     question: 'Will there be mentorship or check-ins?',
     answer: 'Yes, selected teams will have check-ins and support during the refinement phase before the final presentation.',
-  },
-  // {
-  //   question: 'Where will the final event be held?',
-  //   answer: 'The final in-person judging and presentation will take place at Army Hall, LASU Epe Campus.',
-  // },
+  }
 ];
 
 
