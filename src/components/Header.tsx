@@ -60,7 +60,7 @@ const Header: React.FC = () => {
 
           {/* Register Button */}
           <a
-            href="https://forms.gle/z258wJh7Vas1W3ZF9"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block bg-pink-500 font-orbitron hover:bg-pink-600 text-white px-5 py-2 rounded-full transition-colors shadow-md"
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
               <li>
                 <div className="flex flex-col space-y-2">
                   <a
-                    href="https://forms.gle/z258wJh7Vas1W3ZF9"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center font-orbitron bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-colors"

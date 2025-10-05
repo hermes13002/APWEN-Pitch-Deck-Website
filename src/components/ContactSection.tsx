@@ -52,7 +52,7 @@ const ContactSection: React.FC = () => {
 
             <div className="mt-8 flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
               <a
-                href="https://forms.gle/z258wJh7Vas1W3ZF9"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-orbitron font-medium transition-colors shadow-md inline-block text-center"

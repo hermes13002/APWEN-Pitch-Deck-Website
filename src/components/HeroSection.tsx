@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
 
             <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row items-center md:items-start">
               <a
-                href="https://forms.gle/z258wJh7Vas1W3ZF9"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-pink-500 px-8 py-3 font-orbitron rounded-full font-medium transition-all duration-300 shadow-lg transform hover:scale-105 hover:shadow-xl hover:glow relative overflow-hidden group"

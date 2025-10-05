@@ -97,7 +97,7 @@ const TimelineSection: React.FC = () => {
 
         <div className="mt-16 text-center">
           <a
-            href="https://forms.gle/z258wJh7Vas1W3ZF9"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-pink-500 hover:bg-pink-600 font-orbitron text-white px-8 py-3 rounded-full font-medium transition-colors shadow-lg inline-block"
