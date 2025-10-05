@@ -30,6 +30,12 @@
   animation: slide-up 1s ease-out;
 }
 
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
 .hover\:glow:hover {
   box-shadow: 0 0 15px rgba(255, 107, 0, 0.5);
 }

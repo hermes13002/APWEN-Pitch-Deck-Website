@@ -1,7 +1,10 @@
 import React from 'react';
 import { Lightbulb, LineChart, Hand } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimations';
 
 const AboutSection: React.FC = () => {
+  useScrollAnimation();
+  
   const themes = [
     { icon: <Hand className="w-6 h-6 text-yellow-500" />, title: 'Mentorship', 
       description: "Personalized guidance from tech pioneers to refine your vision and strategy." 
@@ -20,16 +23,16 @@ const AboutSection: React.FC = () => {
         <div className="bg-gray-100/80 dark:bg-gray-900/70 backdrop-blur-md rounded-xl p-10 shadow-xl">
 
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-orbitron">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-orbitron scroll-animate scroll-hidden">
               About the Summit
             </h2>
             <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-5xl mx-auto font-ubuntu">
+            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-5xl mx-auto font-ubuntu scroll-animate scroll-hidden">
               Step into the future at APWEN LASU's premier event, blending cutting-edge innovation with career acceleration. Young African female trailblazers like you will gain mentorship from industry leaders, forge vital connections, and pitch bold ideas to real-world opportunities.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 scroll-animate scroll-hidden">
             {themes.map((theme, index) => (
               <div
                 key={index}

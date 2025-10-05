@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Calendar, Users, CheckCircle, Award, MapPin } from 'lucide-react';
+import { Calendar, Users, CheckCircle } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimations';
 
 const TimelineSection: React.FC = () => {
+  useScrollAnimation();
   const [activeStep, setActiveStep] = useState(0);
   
   const timelineSteps = [
@@ -32,9 +34,9 @@ const TimelineSection: React.FC = () => {
     <section id="timeline" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron">Event Timeline</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Event Timeline</h2>
           <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
-          <p className="text-xl text-white-600 max-w-4xl mx-auto font-ubuntu">
+          <p className="text-lg text-white-600 max-w-4xl mx-auto font-ubuntu scroll-animate scroll-hidden">
             Mark your calendar for this high-energy journey from idea submission to pitch triumph. Stay ahead with clear milestones to showcase your innovation.
           </p>
         </div>

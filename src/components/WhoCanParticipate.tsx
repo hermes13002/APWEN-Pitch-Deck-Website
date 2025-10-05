@@ -1,8 +1,9 @@
 import React from 'react';
 import { Send, Mic2Icon, File} from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimations';
 
 const WhoCanParticipate: React.FC = () => {
-  
+  useScrollAnimation();
   return (
     <section 
         id="participate" 
@@ -17,22 +18,22 @@ const WhoCanParticipate: React.FC = () => {
             <div className="bg-gray-900/90 text-white rounded-2xl p-10 shadow-xl backdrop-blur-md border border-gray-700">
             
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-6 font-orbitron">
+            <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-6 font-orbitron scroll-animate scroll-hidden">
                 Who Can Participate
             </h2>
-            <p className="text-gray-300 text-xl mb-10 max-w-4xl font-ubuntu">
+            <p className="text-gray-300 text-lg mb-10 max-w-4xl font-ubuntu scroll-animate scroll-hidden">
                 Open to ambitious young African female students, early-career innovators, and startup enthusiasts 
                 aged 18-35 with passion for tech and social impact. No prior experience required – just bold ideas 
                 ready to disrupt.
             </p>
 
             {/* Subheading */}
-            <h3 className="text-2xl font-semibold text-pink-400 mb-6 font-orbitron">
+            <h3 className="text-2xl font-semibold text-pink-400 mb-6 font-orbitron scroll-animate scroll-hidden">
                 How to Register
             </h3>
 
             {/* Steps Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6 scroll-animate scroll-hidden">
 
                 {/* Step 1 */}
                 <div className="border-t-2 border-pink-400 pt-4">
@@ -64,7 +65,7 @@ const WhoCanParticipate: React.FC = () => {
             </div>
 
             {/* Footer Text */}
-            <p className="text-gray-300 text-xl font-ubuntu">
+            <p className="text-gray-300 text-xl font-ubuntu scroll-animate scroll-hidden">
                 Registration is free – secure your spot and launch your future today.
             </p>
 

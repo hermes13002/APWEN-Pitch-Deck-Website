@@ -48,7 +48,7 @@ const Header: React.FC = () => {
                   <button
                     onClick={() => scrollToSection(item)}
                     className={`text-xl font-bold font-orbitron transition-colors hover:text-white ${
-                      isScrolled ? 'text-pink-500' : 'text-white'
+                      isScrolled ? 'text-white-500' : 'text-white'
                     }`}
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -75,9 +75,9 @@ const Header: React.FC = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className={`h-6 w-6 ${isScrolled ? 'text-pink-500' : 'text-white'}`} />
+              <X className={`h-6 w-6 ${isScrolled ? 'text-white-500' : 'text-white'}`} />
             ) : (
-              <Menu className={`h-6 w-6 ${isScrolled ? 'text-pink-500' : 'text-white'}`} />
+              <Menu className={`h-6 w-6 ${isScrolled ? 'text-white-500' : 'text-white'}`} />
             )}
           </button>
         </div>

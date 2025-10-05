@@ -1,20 +1,22 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimations';
 
 const ContactSection: React.FC = () => {
+  useScrollAnimation();
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron">Contact Us</h2>
-          <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-100 max-w-3xl mx-auto font-ubuntu">
+          <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Contact Us</h2>
+          <div className="w-20 h-1 bg-pink-500 mx-auto mb-6 scroll-animate scroll-hidden"></div>
+          <p className="text-lg text-gray-100 max-w-3xl mx-auto font-ubuntu scroll-animate scroll-hidden">
             Have questions about Nexus Hackathon 2.0? Our team is here to help!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="bg-gray-50 rounded-xl p-8 shadow-md">
+          <div className="bg-gray-50 rounded-xl p-8 shadow-md scroll-animate scroll-hidden">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 font-poppins">Get In Touch</h3>
             
             <div className="space-y-6">
@@ -50,7 +52,7 @@ const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-8 flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
+            <div className="mt-8 flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 scroll-animate scroll-hidden">
               <a
                 href="#"
                 target="_blank"
