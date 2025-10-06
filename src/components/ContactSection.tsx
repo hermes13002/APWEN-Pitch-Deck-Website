@@ -5,7 +5,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimations';
 const ContactSection: React.FC = () => {
   useScrollAnimation();
   return (
-    <section id="contact" className="py-20 bg-white ">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Contact Us</h2>
@@ -73,26 +73,9 @@ const ContactSection: React.FC = () => {
           </div>
 
           <div className="h-80 md:h-auto rounded-xl overflow-hidden shadow-md">
-            {/* <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4969082346947!2d3.6009809753061004!3d6.585349393440338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103954de0b731287%3A0x435be037801503c0!2sLagos%20State%20University%2C%20Epe%20Campus!5e0!3m2!1sen!2sng!4v1686506548651!5m2!1sen!2sng" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="LASU Epe Campus Map"
-            ></iframe> */}
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4228628498154!2d3.991570534887703!3d6.594249700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039471c10863f8d%3A0x792b76ef90513491!2sLAGOS%20STATE%20UNIVERSITY%20EPE%20CAMPUS!5e0!3m2!1sen!2sng!4v1748746751444!5m2!1sen!2sng"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4228202883332!2d3.993372974081202!3d6.594255022338947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039471c10863f8d%3A0x792b76ef90513491!2sLAGOS%20STATE%20UNIVERSITY%20EPE%20CAMPUS!5e0!3m2!1sen!2sng!4v1759747307370!5m2!1sen!2sng" 
             width="600" 
-            height="450" 
-            style={{ border: 0 }} 
-            allowFullScreen 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-            title="LASU Epe Campus Map"
-            ></iframe>
+            height="450" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="LASU Epe Campus Map"></iframe>
           </div>
         </div>
       </div>

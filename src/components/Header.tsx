@@ -25,7 +25,7 @@
 //     <header
 //       className={`fixed w-full z-50 transition-all duration-300 ${
 //         isScrolled
-//           ? '/10 backdrop-blur-md py-4'
+//           ? 'dark:bg-gray-900/10 backdrop-blur-md py-4'
 //           : 'bg-transparent py-4'
 //       }`}
 //     >
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-        ? 'md:/10 md:backdrop-blur-md py-4'
+        ? 'md:dark:bg-gray-900/10 md:backdrop-blur-md py-4'
         : 'py-4'
       }`}
     >

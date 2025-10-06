@@ -39,10 +39,10 @@ function App() {
           fpsLimit: 120,
           particles: {
             color: {
-              value: "#ff6b00",
+              value: "#FFC0CB",
             },
             links: {
-              color: "#ff6b00",
+              color: "#FFC0CB",
               distance: 150,
               enable: true,
               opacity: 0.2,
