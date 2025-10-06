@@ -162,7 +162,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
 
           {/* Logo - Hidden on Mobile */}
-          <div className="hidden md:flex items-center">
+          <div className="md:flex items-center">
             <img
               src="/apwen_logo.png"
               alt="APWEN Logo"

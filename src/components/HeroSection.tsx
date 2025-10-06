@@ -45,6 +45,16 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left">
+            {/* <h3 className="text-2xl md:text-3xl lg:text-6xl font-bold text-pink-500 mb-4 animate-fade-in font-orbitron">
+              APWEN LASU
+            </h3> */}
+             <div className='animate-fade-in mt-20 flex md:block justify-center'>
+             <img
+              src="/apwen_logo.png"
+              alt="APWEN Logo"
+              className="w-auto mr-2"
+              style={{ maxHeight: 100 }}
+            /></div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in font-orbitron">
               Where Ideas Meet Opportunities <span className="text-pink-500"></span>
             </h1>
