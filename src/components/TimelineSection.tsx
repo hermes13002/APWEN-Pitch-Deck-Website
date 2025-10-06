@@ -10,22 +10,22 @@ const TimelineSection: React.FC = () => {
     {
       icon: <Users className="w-6 h-6" />,
       title: "Registration",
-      date: "Oct 1 – Oct 21",
+      date: "Oct 6 – Oct 31",
       description: "Idea Submission Window: Submit your pitch deck online.",
       color: "bg-pink-500"
     },
     {
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Proposal Review",
-      date: "Nov 26",
-      description: "Pitch Day: Live event with judging and awards.",
+      date: "Nov 1",
+      description: "Shortlist Announcement: Top 5 selected.",
       color: "bg-pink-600"
     },
     {
       icon: <Calendar className="w-6 h-6" />,
       title: "Project Refinement",
-      date: "Oct 30",
-      description: "Shortlist Announcement: Top 20 ideas selected.",
+      date: "Nov 29",
+      description: "Pitch Day: Live event with judging and awards.",
       color: "bg-pink-500"
     },
   ];

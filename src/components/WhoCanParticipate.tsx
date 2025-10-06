@@ -22,9 +22,7 @@ const WhoCanParticipate: React.FC = () => {
                 Who Can Participate
             </h2>
             <p className="text-gray-300 text-lg mb-10 max-w-4xl font-ubuntu scroll-animate scroll-hidden">
-                Open to ambitious young African female students, early-career innovators, and startup enthusiasts 
-                aged 18-35 with passion for tech and social impact. No prior experience required – just bold ideas 
-                ready to disrupt.
+                Open to ambitious students, early-career innovators with passion for tech and social impact. No prior experience required – just bold ideas ready to disrupt.
             </p>
 
             {/* Subheading */}
@@ -40,7 +38,7 @@ const WhoCanParticipate: React.FC = () => {
                 <Send className="w-7 h-7 text-pink-500" />
                 <h4 className="font-bold text-xl mb-2 font-poppins">Submit Idea</h4>
                 <p className="text-gray-300 text-lg font-ubuntu">
-                    Upload your 1-page pitch summary via our portal by Oct 21.
+                    Upload your 1-page pitch proposal via our portal on or before Oct 31.
                 </p>
                 </div>
 
@@ -58,7 +56,7 @@ const WhoCanParticipate: React.FC = () => {
                 <Mic2Icon className="w-7 h-7 text-pink-500" />
                 <h4 className="font-bold text-xl mb-2 font-poppins">Attend Event</h4>
                 <p className="text-gray-300 text-lg font-ubuntu">
-                    Join Nov 26 for live pitches and feedback from experts.
+                    Join Nov 29 for live pitches and feedback from experts.
                 </p>
                 </div>
 

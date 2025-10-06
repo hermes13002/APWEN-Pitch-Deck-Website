@@ -20,8 +20,8 @@ const HeroSection: React.FC = () => {
         scaleMobile: 1.0,
         // color: new THREE.Color().setRGB(1, 1, 1),
         maxDistance: 20.00,
-        spacing: 17.0,
-        points: 20.00,
+        spacing: 15.0,
+        points: 15.00,
       });
     }
     return () => {
@@ -45,10 +45,6 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left">
-            {/* <div className="flex items-center justify-center md:justify-start mb-4">
-              <Cpu className="text-blue-300 w-10 h-10 mr-2 animate-pulse" />
-              <Zap className="text-yellow-300 w-10 h-10 animate-bounce" />
-            </div> */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in font-orbitron">
               Where Ideas Meet Opportunities <span className="text-pink-500"></span>
             </h1>
@@ -59,7 +55,7 @@ const HeroSection: React.FC = () => {
 
             <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row items-center md:items-start">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScz-Jyc7sjwB_0hiISx-VPT-BrFOZxwjgL-jgV1N6lC3vm7ew/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-pink-500 px-8 py-3 font-orbitron rounded-full font-medium transition-all duration-300 shadow-lg transform hover:scale-105 hover:shadow-xl hover:glow relative overflow-hidden group"

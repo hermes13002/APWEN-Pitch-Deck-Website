@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-3 md:mb-0">
             <div className="flex items-center justify-center md:justify-start">
                <img
                 src="/apwen_logo.png"
@@ -18,19 +18,19 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mt-2 text-center md:text-left font-poppins">
               Ignite Your Ideas Today
             </p>
-            <p className="text-gray-400 mt-2 text-center max-w-2xl md:text-left font-ubuntu">
-              Seize this moment to showcase your innovation and connect with a community that believes in your potential. The APWEN LASU Summit is your gateway to empowerment and success.
+            <p className="text-gray-400 mt-2 text-center max-w-lg md:text-left font-ubuntu">
+              Seize this moment to showcase your innovation and connect with a community that believes in your potential. The APWEN LASU Career Summit is your gateway to empowerment and success.
             </p>
           </div>
           
           <div className="flex space-x-6 mb-6 md:mb-0">
             <a 
-            // href="https://www.instagram.com/reel/DKRm2cGqVJo/?igsh=MXNxejl1YnZ0OWx0dQ=="
+            href="https://www.instagram.com/apwenlasu?igsh=MXI0cGdzdXMyc2lrcQ=="
             className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
               <Instagram className="w-5 h-5" />
             </a>
             <a 
-            // href="https://www.linkedin.com/posts/lasu-spe-student-chapter_python-spelasu-aiclub-activity-7334172906983178241-KEqh" 
+            href="https://www.linkedin.com/company/apwen-lasu/" 
             className="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
               <Linkedin className="w-5 h-5" />
             </a>

@@ -11,7 +11,7 @@ const faqData = [
   },
   {
     question: 'Who can participate in the competition?',
-    answer: 'Only current students of Lagos State University (LASU) from any department or level are eligible.',
+    answer: 'Only current students of Lagos State University (LASU) from the engineering faculty are eligible.',
   },
   {
     question: 'What should the proposal include?',
@@ -23,11 +23,11 @@ const faqData = [
   },
   {
     question: 'What happens after the proposal is submitted?',
-    answer: 'Proposals will be reviewed, and at least 15 teams will be shortlisted for the online judging phase.',
+    answer: 'Proposals will be reviewed, and at least 5 teams will be shortlisted for the online judging phase.',
   },
   {
-    question: 'Will there be mentorship or check-ins?',
-    answer: 'Yes, selected teams will have check-ins and support during the refinement phase before the final presentation.',
+    question: 'Will there be check-ins?',
+    answer: 'Yes, selected teams will have check-ins and support before the final presentation.',
   }
 ];
 

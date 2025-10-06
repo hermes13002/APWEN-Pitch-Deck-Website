@@ -72,7 +72,7 @@ function App() {
       <AboutSection />
       <WhyItMattersSection />
       <WhoCanParticipate />
-      <PrizesSection />
+      {/* <PrizesSection /> */}
       <TimelineSection />
       {/* <TestimonialsSection /> */}
       {/* <SponsorsSection /> */}

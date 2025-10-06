@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
     { icon: <Lightbulb className="w-6 h-6 text-green-500" />, title: 'Innovation', 
       description: 'Spark breakthroughs in tech and beyond through collaborative workshops.' },
     { icon: <LineChart className="w-6 h-6 text-orange-500" />, title: 'Industry Connections', 
-      description: "Build networks with startups, investors, and executives driving Africa's future." },
+      description: "Build networks with investors and executives driving Africa's future." },
   ];
 
   return (
@@ -28,7 +28,7 @@ const AboutSection: React.FC = () => {
             </h2>
             <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-5xl mx-auto font-ubuntu scroll-animate scroll-hidden">
-              Step into the future at APWEN LASU's premier event, blending cutting-edge innovation with career acceleration. Young African female trailblazers like you will gain mentorship from industry leaders, forge vital connections, and pitch bold ideas to real-world opportunities.
+              Step into the future at APWEN LASU's premier event, blending cutting-edge innovation with career acceleration. Young African trailblazers like you will gain mentorship from industry leaders, forge vital connections, and pitch bold ideas to real-world opportunities.
             </p>
           </div>
 

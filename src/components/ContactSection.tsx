@@ -55,7 +55,7 @@ const ContactSection: React.FC = () => {
 
             <div className="mt-8 flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 scroll-animate scroll-hidden">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScz-Jyc7sjwB_0hiISx-VPT-BrFOZxwjgL-jgV1N6lC3vm7ew/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-orbitron font-medium transition-colors shadow-md inline-block text-center"
