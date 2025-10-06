@@ -235,7 +235,7 @@ const Header: React.FC = () => {
               ))}
               <li>
                 <a
-                  href="#"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScz-Jyc7sjwB_0hiISx-VPT-BrFOZxwjgL-jgV1N6lC3vm7ew/viewform?usp=header"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center font-orbitron bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-colors"
