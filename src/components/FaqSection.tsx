@@ -11,7 +11,7 @@ const faqData = [
   },
   {
     question: 'Who can participate in the competition?',
-    answer: 'Only current students of Lagos State University (LASU) from the engineering faculty are eligible.',
+    answer: 'Only current male and female students of Lagos State University (LASU) from the engineering faculty are eligible.',
   },
   {
     question: 'What should the proposal include?',
