@@ -191,7 +191,7 @@ const Header: React.FC = () => {
 
           {/* Register Button (Desktop Only) */}
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScz-Jyc7sjwB_0hiISx-VPT-BrFOZxwjgL-jgV1N6lC3vm7ew/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block bg-pink-500 font-orbitron hover:bg-pink-600 text-white px-5 py-2 rounded-full transition-colors shadow-md"
