@@ -20,7 +20,7 @@ const Gallery: React.FC = () => {
       <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
 
       {/* Masonry Layout */}
-      <div className="columns-1 sm:columns-2 md:columns-3 gap-4 px-8">
+      <div className="columns-1 sm:columns-2 md:columns-3 gap-4 px-4">
         {images.map((src, idx) => (
           <img
             key={idx}
