@@ -40,7 +40,7 @@ const FaqSection = () => {
   };
 
   return (
-    <div id="FAQ" className="px-4 py-10 md:px-20 bg-white dark:bg-gray-900">
+    <div id="FAQ" className="px-4 py-10 md:px-20 bg-white ">
       <h2 className="text-3xl font-bold font-orbitron text-center mb-3">FAQs</h2>
       <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
       <div className="space-y-4 max-w-4xl mx-auto">

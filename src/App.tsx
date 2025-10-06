@@ -13,7 +13,7 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import type { Container, Engine } from "tsparticles-engine";
 import WhoCanParticipate from './components/WhoCanParticipate';
-import PrizesSection from './components/PrizesSection';
+// import PrizesSection from './components/PrizesSection';
 
 function App() {
   const particlesInit = React.useCallback(async (engine: Engine) => {
@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans relative bg-dark">
+    <div className="font-sans relative">
       <Particles
         id="tsparticles"
         init={particlesInit}

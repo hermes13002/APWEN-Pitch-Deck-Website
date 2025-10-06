@@ -17,17 +17,17 @@ const AboutSection: React.FC = () => {
 
   return (
     <section id="about" className="py-20 bg-cover bg-center relative" style={{ backgroundImage: "url('/about_bg.jpg')" }}>
-      <div className="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       
       <div className="relative container mx-auto px-4 md:px-6">
-        <div className="bg-gray-100/80 dark:bg-gray-900/70 backdrop-blur-md rounded-xl p-10 shadow-xl">
+        <div className="bg-gray-100/80  backdrop-blur-md rounded-xl p-10 shadow-xl">
 
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-orbitron scroll-animate scroll-hidden">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-orbitron scroll-animate scroll-hidden">
               About the Summit
             </h2>
             <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-5xl mx-auto font-ubuntu scroll-animate scroll-hidden">
+            <p className="text-lg text-gray-700  max-w-5xl mx-auto font-ubuntu scroll-animate scroll-hidden">
               Step into the future at APWEN LASU's premier event, blending cutting-edge innovation with career acceleration. Young African trailblazers like you will gain mentorship from industry leaders, forge vital connections, and pitch bold ideas to real-world opportunities.
             </p>
           </div>
@@ -36,15 +36,15 @@ const AboutSection: React.FC = () => {
             {themes.map((theme, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700"
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200"
               >
-                <div className="rounded-full bg-gray-100 dark:bg-gray-700 w-14 h-14 flex items-center justify-center mb-4 shadow-sm">
+                <div className="rounded-full bg-gray-100 w-14 h-14 flex items-center justify-center mb-4 shadow-sm">
                   {theme.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2 font-poppins">
+                <h3 className="text-xl font-semibold text-gray-800   mb-2 font-poppins">
                   {theme.title}
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 font-ubuntu">
+                <p className="text-sm text-gray-600  font-ubuntu">
                   {theme.description}
                 </p>
               </div>
