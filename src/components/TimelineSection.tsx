@@ -17,7 +17,7 @@ const TimelineSection: React.FC = () => {
     {
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Proposal Review",
-      date: "Nov 1",
+      date: "Nov 7",
       description: "Shortlist Announcement: Top 5 selected.",
       color: "bg-pink-600"
     },
@@ -31,10 +31,10 @@ const TimelineSection: React.FC = () => {
   ];
 
   return (
-    <section id="timeline" className="py-20">
+    <section id="timeline" className="py-20 dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Event Timeline</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Event Timeline</h2>
           <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
           <p className="text-lg text-white-600 max-w-4xl mx-auto font-ubuntu scroll-animate scroll-hidden">
             Mark your calendar for this high-energy journey from idea submission to pitch triumph. Stay ahead with clear milestones to showcase your innovation.
@@ -44,11 +44,12 @@ const TimelineSection: React.FC = () => {
         {/* Mobile Timeline */}
         <div className="md:hidden">
           <div className="flex items-center justify-between mb-6">
+            {/* <div className="absolute left-1/8 transform-translate-x-1/6 h-1 w-full mx-auto bg-gray-200"></div> */}
             {timelineSteps.map((step, index) => (
               <button
                 key={index}
                 onClick={() => setActiveStep(index)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center text-white ${
+                className={`w-10 h-10 z-10 rounded-full flex items-center justify-center text-white ${
                   activeStep === index ? step.color : 'bg-gray-700'
                 }`}
               >

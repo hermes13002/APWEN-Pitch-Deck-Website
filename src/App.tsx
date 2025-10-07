@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="font-sans relative">
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -66,7 +66,7 @@ function App() {
           },
         }}
         className="fixed inset-0 -z-10"
-      />
+      /> */}
 
       <Header />
       <HeroSection />

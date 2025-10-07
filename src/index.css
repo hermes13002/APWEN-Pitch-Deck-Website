@@ -84,6 +84,9 @@
   transform: translateY(20px);
 }
 
+.bg-custom-gradient {
+  background: linear-gradient(to bottom, rgb(17, 24, 40) 80%, #000000 100%);
+}
 
 .hover\:glow:hover {
   box-shadow: 0 0 15px rgba(255, 107, 0, 0.5);

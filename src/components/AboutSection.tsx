@@ -18,6 +18,9 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-cover bg-center relative" style={{ backgroundImage: "url('/about_bg.jpg')" }}>
       <div className="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
+
+      {/* <div className="absolute top-0 left-0 w-full h-40 opacity-70 bg-gradient-to-b from-purple-700 via-black/60 to-transparent z-10"></div> */}
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-gray-900 via-black/60 to-transparent z-10"></div>
       
       <div className="relative container mx-auto px-4 md:px-6">
         <div className="bg-gray-100/80 dark:bg-gray-900/70 backdrop-blur-md rounded-xl p-10 shadow-xl">

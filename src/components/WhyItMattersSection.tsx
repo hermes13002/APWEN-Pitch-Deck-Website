@@ -33,7 +33,9 @@ const WhyItMattersSection: React.FC = () => {
   ];
 
   return (
-    <section id="why" className="py-20 dark:bg-gray-900">
+    // <section id="why" className="py-20 dark:bg-gray-900">
+    <section id = 'why' className="py-20 dark:bg-[linear-gradient(to_bottom,_rgba(17,24,39,1)_80%,_rgba(17,24,39,1)_100%)]">
+      
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white-900 mb-4 font-orbitron scroll-animate scroll-hidden">Focus Areas</h2>

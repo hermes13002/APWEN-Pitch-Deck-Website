@@ -3,7 +3,7 @@ import { useState } from 'react';
 const faqData = [
   {
     question: 'Can I register alone or do I need a team?',
-    answer: 'You need a team of at least 2 and a maximum of 4 LASU students to register.',
+    answer: 'You need a team of at least 2 and a maximum of 4 LASU students to register and	every team member must actively contribute.',
   },
   {
     question: 'Is there a registration fee?',
@@ -18,12 +18,12 @@ const faqData = [
     answer: 'Your proposal must include: Title, Aim & Objectives, Problem Statement, Proposed Solution, Project Type, Expected Impact, and Project Importance (100 words max).',
   },
   {
-    question: 'What are the judging criteria for the proposal stage?',
-    answer: 'Proposals will be judged on clarity, innovation, feasibility, impact, relevance to theme, and presentation quality.',
+    question: 'What are the judging criterias?',
+    answer: 'Proposals will be judged on Problem and solution, Business model, market potential and feasibilty, Innovation and impact, Team and execution, Presentation and communication.',
   },
   {
     question: 'What happens after the proposal is submitted?',
-    answer: 'Proposals will be reviewed, and at least 5 teams will be shortlisted for the online judging phase.',
+    answer: 'Proposals will be reviewed, and 5 teams will be shortlisted for the final phase.',
   },
   {
     question: 'Will there be check-ins?',
@@ -51,7 +51,7 @@ const FaqSection = () => {
             onClick={() => toggle(index)}
           >
             <div className="flex justify-between items-center">
-              <h3 className="font-semibold font-orbitron">{faq.question}</h3>
+              <h3 className="font-medium font-orbitron">{faq.question}</h3>
               <span className="text-xl">{openIndex === index ? '−' : '+'}</span>
             </div>
             {openIndex === index && (

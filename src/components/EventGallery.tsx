@@ -14,13 +14,21 @@ const Gallery: React.FC = () => {
 
   return (
     <section className="py-16 px-16">
-      <h2 className="text-3xl font-bold text-center text-white mb-4 font-orbitron">
+      
+      {/* <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-gray-900 via-black/60 to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-gray-900 via-black/60 to-transparent z-10"></div> */}
+
+      <h2 className="text-2xl font-bold text-center text-white mb-4 font-orbitron">
         APWEN Event Highlights
       </h2>
       <div className="w-20 h-1 bg-pink-500 mx-auto mb-6"></div>
 
+      {/* <p className="text-lg text-white-600 max-w-4xl mx-auto font-ubuntu scroll-animate scroll-hidden">
+        Highlights of APWEN previous events
+      </p> */}
+
       {/* Masonry Layout */}
-      <div className="columns-1 sm:columns-2 md:columns-3 gap-4 px-4">
+      <div className="columns-1 sm:columns-2 md:columns-3 gap-2 px-2">
         {images.map((src, idx) => (
           <img
             key={idx}
