@@ -273,13 +273,19 @@ const AboutSection: React.FC = () => {
               style={{ transitionDelay: pillarsInView ? '100ms' : '0ms' }}
             >
               <div className="md:translate-y-0 transition-all duration-300 hover:-translate-y-2 group">
-                <div className="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between min-h-[290px]">
-                  <div>
+                <div className="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between min-h-[290px] relative overflow-hidden">
+                  
+                  {/* Subtle Ambient Icon Watermark */}
+                  <div 
+                    aria-hidden="true"
+                    className="absolute -right-4 -bottom-4 w-32 h-32 sm:w-40 sm:h-40 text-white/[0.04] group-hover:text-yellow-400/[0.12] transition-all duration-500 pointer-events-none select-none group-hover:scale-105 group-hover:rotate-2"
+                  >
+                    <Icon icon={pillars[0].icon} className="w-full h-full" />
+                  </div>
+
+                  <div className="relative z-10">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-2xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center text-yellow-400 group-hover:scale-105 transition-transform">
-                        <Icon icon={pillars[0].icon} className="w-5 h-5" />
-                      </div>
-                      <span className="text-[10px] font-orbitron font-bold text-yellow-400/80 bg-yellow-500/10 px-2.5 py-0.5 rounded-full border border-yellow-500/20">
+                      <span className="text-xs font-orbitron font-bold text-yellow-400 group-hover:text-yellow-300 transition-colors tracking-wider">
                         {pillars[0].tag}
                       </span>
                     </div>
@@ -293,7 +299,7 @@ const AboutSection: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-gray-800/80 flex items-center text-[11px] text-gray-500 font-ubuntu">
+                  <div className="pt-4 border-t border-white/10 flex items-center text-[11px] text-gray-400 font-ubuntu relative z-10">
                     <span>Theory to Execution</span>
                   </div>
                 </div>
@@ -310,13 +316,19 @@ const AboutSection: React.FC = () => {
               style={{ transitionDelay: pillarsInView ? '250ms' : '0ms' }}
             >
               <div className="md:translate-y-10 lg:translate-y-14 transition-all duration-300 hover:translate-y-8 lg:hover:translate-y-12 group">
-                <div className="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between min-h-[290px]">
-                  <div>
+                <div className="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between min-h-[290px] relative overflow-hidden">
+                  
+                  {/* Subtle Ambient Icon Watermark */}
+                  <div 
+                    aria-hidden="true"
+                    className="absolute -right-4 -bottom-4 w-32 h-32 sm:w-40 sm:h-40 text-white/[0.04] group-hover:text-pink-400/[0.12] transition-all duration-500 pointer-events-none select-none group-hover:scale-105 group-hover:rotate-2"
+                  >
+                    <Icon icon={pillars[1].icon} className="w-full h-full" />
+                  </div>
+
+                  <div className="relative z-10">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 group-hover:scale-105 transition-transform">
-                        <Icon icon={pillars[1].icon} className="w-5 h-5" />
-                      </div>
-                      <span className="text-[10px] font-orbitron font-bold text-pink-400/80 bg-pink-500/10 px-2.5 py-0.5 rounded-full border border-pink-500/20">
+                      <span className="text-xs font-orbitron font-bold text-pink-400 group-hover:text-pink-300 transition-colors tracking-wider">
                         {pillars[1].tag}
                       </span>
                     </div>
@@ -330,7 +342,7 @@ const AboutSection: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-gray-800/80 flex items-center text-[11px] text-gray-500 font-ubuntu">
+                  <div className="pt-4 border-t border-white/10 flex items-center text-[11px] text-gray-400 font-ubuntu relative z-10">
                     <span>Cross-Campus Networks</span>
                   </div>
                 </div>
@@ -347,13 +359,19 @@ const AboutSection: React.FC = () => {
               style={{ transitionDelay: pillarsInView ? '400ms' : '0ms' }}
             >
               <div className="md:translate-y-20 lg:translate-y-28 transition-all duration-300 hover:translate-y-18 lg:hover:translate-y-26 group">
-                <div className="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between min-h-[290px]">
-                  <div>
+                <div className="glass-card glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between min-h-[290px] relative overflow-hidden">
+                  
+                  {/* Subtle Ambient Icon Watermark */}
+                  <div 
+                    aria-hidden="true"
+                    className="absolute -right-4 -bottom-4 w-32 h-32 sm:w-40 sm:h-40 text-white/[0.04] group-hover:text-purple-400/[0.12] transition-all duration-500 pointer-events-none select-none group-hover:scale-105 group-hover:rotate-2"
+                  >
+                    <Icon icon={pillars[2].icon} className="w-full h-full" />
+                  </div>
+
+                  <div className="relative z-10">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-105 transition-transform">
-                        <Icon icon={pillars[2].icon} className="w-5 h-5" />
-                      </div>
-                      <span className="text-[10px] font-orbitron font-bold text-purple-400/80 bg-purple-500/10 px-2.5 py-0.5 rounded-full border border-purple-500/20">
+                      <span className="text-xs font-orbitron font-bold text-purple-400 group-hover:text-purple-300 transition-colors tracking-wider">
                         {pillars[2].tag}
                       </span>
                     </div>
@@ -367,7 +385,7 @@ const AboutSection: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-gray-800/80 flex items-center text-[11px] text-gray-500 font-ubuntu">
+                  <div className="pt-4 border-t border-white/10 flex items-center text-[11px] text-gray-400 font-ubuntu relative z-10">
                     <span>Confidence & Growth</span>
                   </div>
                 </div>
