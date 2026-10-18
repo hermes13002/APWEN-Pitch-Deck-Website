@@ -1,86 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import WhyItMattersSection from './components/WhyItMattersSection';
+import WhoCanParticipate from './components/WhoCanParticipate';
 import TimelineSection from './components/TimelineSection';
-// import TestimonialsSection from './components/TestimonialsSection';
-// import SponsorsSection from './components/SponsorsSection';
+import JudgingCriteriaSection from './components/JudgingCriteriaSection';
+import Gallery from './components/EventGallery';
+import FaqSection from './components/FaqSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import FaqSection from './components/FaqSection';
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
-import type { Container, Engine } from "tsparticles-engine";
-import WhoCanParticipate from './components/WhoCanParticipate';
-import Gallery from './components/EventGallery';
-// import PrizesSection from './components/PrizesSection';
+import RegistrationModal from './components/RegistrationModal';
 
 function App() {
-  const particlesInit = React.useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
-  }, []);
+  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
-  const particlesLoaded = React.useCallback(async (container: Container | undefined) => {
-    console.log(container);
-  }, []);
+  const openRegisterModal = () => setIsRegisterModalOpen(true);
+  const closeRegisterModal = () => setIsRegisterModalOpen(false);
 
   return (
-    <div className="font-sans relative">
-      {/* <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: 120,
-          particles: {
-            color: {
-              value: "#FFC0CB",
-            },
-            links: {
-              color: "#FFC0CB",
-              distance: 150,
-              enable: true,
-              opacity: 0.2,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 1,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 40,
-            },
-            opacity: {
-              value: 0.2,
-            },
-          },
-        }}
-        className="fixed inset-0 -z-10"
-      /> */}
+    <div className="font-sans relative bg-gray-950 text-white min-h-screen overflow-x-hidden selection:bg-pink-500 selection:text-white">
+      {/* Global Background Layer: Engineering Dot Grid & Ambient Colored Refraction Orbs */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        {/* Subtle dot matrix texture */}
+        <div className="absolute inset-0 bg-dot-grid opacity-35"></div>
 
-      <Header />
-      <HeroSection />
+        {/* Ambient luminous glow spheres that bleed through frosted glass cards */}
+        <div className="absolute top-[10%] -left-[150px] w-[550px] h-[550px] rounded-full bg-pink-600/20 blur-[130px]"></div>
+        <div className="absolute top-[28%] -right-[150px] w-[600px] h-[600px] rounded-full bg-purple-600/20 blur-[140px]"></div>
+        <div className="absolute top-[48%] left-[10%] w-[500px] h-[500px] rounded-full bg-pink-500/15 blur-[120px]"></div>
+        <div className="absolute top-[68%] right-[5%] w-[550px] h-[550px] rounded-full bg-indigo-600/20 blur-[130px]"></div>
+        <div className="absolute top-[88%] left-[20%] w-[600px] h-[600px] rounded-full bg-pink-600/15 blur-[140px]"></div>
+      </div>
+
+      <div className="relative z-10">
+        {/* Navigation Header */}
+        <Header onOpenRegister={openRegisterModal} />
+
+      {/* Hero Section */}
+      <HeroSection onOpenRegister={openRegisterModal} />
+
+      {/* About the Summit */}
       <AboutSection />
-      <WhyItMattersSection />
-      <WhoCanParticipate />
-      {/* <PrizesSection /> */}
-      <TimelineSection />
-      {/* <TestimonialsSection /> */}
-      {/* <SponsorsSection /> */}
+
+      {/* The 5 Solution-Focused Tracks */}
+      <WhyItMattersSection onOpenRegister={openRegisterModal} />
+
+      {/* Who Can Participate & 4-Step Onboarding */}
+      <WhoCanParticipate onOpenRegister={openRegisterModal} />
+
+      {/* 4-Stage Competition Timeline */}
+      <TimelineSection onOpenRegister={openRegisterModal} />
+
+      {/* Official 100-Point Scoring Rubric & 8-Min Pitch Rules */}
+      <JudgingCriteriaSection onOpenRegister={openRegisterModal} />
+
+      {/* Past Event Highlights */}
       <Gallery />
+
+      {/* Frequently Asked Questions */}
       <FaqSection />
-      <ContactSection />
-      <Footer />
+
+      {/* Contact & Venue Information */}
+      <ContactSection onOpenRegister={openRegisterModal} />
+
+      {/* Footer */}
+      <Footer onOpenRegister={openRegisterModal} />
+
+      {/* In-App Stateful Registration Modal */}
+      <RegistrationModal 
+        isOpen={isRegisterModalOpen} 
+        onClose={closeRegisterModal} 
+      />
+      </div>
     </div>
   );
 }
