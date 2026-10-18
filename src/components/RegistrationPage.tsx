@@ -331,9 +331,17 @@ const RegistrationPage: React.FC<RegistrationPageProps> = ({ onBack }) => {
               Registration Successful!
             </h2>
 
-            <p className="text-pink-400 font-ubuntu text-base sm:text-lg font-medium mb-6">
+            <p className="text-pink-400 font-ubuntu text-base sm:text-lg font-medium mb-3">
               Team: <strong className="text-white">{formData.teamName}</strong> • {formData.track}
             </p>
+
+            {/* Email Dispatch Notice */}
+            <div className="inline-flex items-center space-x-2 text-xs text-gray-300 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-6">
+              <Icon icon="solar:letter-bold" className="w-4 h-4 text-pink-400 shrink-0" />
+              <span>
+                Confirmation email sent to <strong className="text-white">{formData.leadEmail}</strong>
+              </span>
+            </div>
 
             {/* Crucial Next Step: WhatsApp Cohort Invite */}
             <div className="glass-card rounded-2xl p-6 sm:p-7 text-left mb-8 shadow-xl border border-green-500/30 bg-green-950/10">
