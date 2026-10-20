@@ -4,9 +4,11 @@ import { Icon } from '@iconify/react';
 const Gallery: React.FC = () => {
   const images = [
     "/img1.jpg",
+    "/img5.jpeg",
+    "/img6.jpeg",
+    "/img4.jpg",
     "/img2.jpg",
     "/img3.jpg",
-    "/img4.jpg",
   ];
 
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);

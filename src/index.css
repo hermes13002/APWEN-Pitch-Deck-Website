@@ -275,3 +275,38 @@ html {
 ::-webkit-scrollbar-thumb:active {
   background: rgba(236, 72, 153, 0.95);
 }
+
+/* Hide scrollbar for carousel while preserving smooth horizontal touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes float-nudge-left {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-4px);
+  }
+}
+
+@keyframes float-nudge-right {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(4px);
+  }
+}
+
+.animate-nudge-left {
+  animation: float-nudge-left 1.6s ease-in-out infinite;
+}
+
+.animate-nudge-right {
+  animation: float-nudge-right 1.6s ease-in-out infinite;
+}
