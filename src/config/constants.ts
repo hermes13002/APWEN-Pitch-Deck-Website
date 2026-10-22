@@ -22,7 +22,7 @@ export const EVENT_DETAILS = {
 // External Resource Links
 export const LINKS = {
   // Live Google Apps Script Web App endpoint
-  googleAppsScriptUrl: "https://script.google.com/macros/s/AKfycbzZIgrM3y2-spUS1XX2dusyt1AJKfwoigszFTWvPZ1KuCBmsM2kSEQz1tUHYIO_ZUuZbA/exec",
+  googleAppsScriptUrl: "https://script.google.com/macros/s/AKfycbyCIg2VgbESdcUp_XIOWf2hlKaL_1N1Ibx7253fvNeGJdzc31KbSFGlvGhX7OZhNviFyg/exec",
   
   // Official WhatsApp Community/Group invite URL
   whatsappCommunityUrl: "https://chat.whatsapp.com/GBtp0oHLWrPAY3AH47YI4B?s=cl&p=a&mlu=4&ilr=4",
